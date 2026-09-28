@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "description": "Gazetteer of every district and police station found in data/firs.json. Used for normalising and validating jurisdiction fields during ingest.",
+  "districts": [
+    {
+      "name": "Agra",
+      "police_stations": [
+        "Hariparwat",
+        "Sadar Bazar",
+        "Sikandra",
+        "Tajganj"
+      ]
+    },
+    {
+      "name": "Ghaziabad",
+      "police_stations": [
+        "Indirapuram",
+        "Kavi Nagar",
+        "Sahibabad",
+        "Vijay Nagar"
+      ]
+    },
+    {
+      "name": "Kanpur Nagar",
+      "police_stations": [
+        "Barra",
+        "Kakadeo",
+        "Kalyanpur",
+        "Swaroop Nagar"
+      ]
+    },
+    {
+      "name": "Lucknow",
+      "police_stations": [
+        "Aliganj",
+        "Chowk",
+        "Gomti Nagar",
+        "Hazratganj"
+      ]
+    },
+    {
+      "name": "Varanasi",
+      "police_stations": [
+        "Bhelupur",
+        "Cantt",
+        "Lanka",
+        "Sarnath"
+      ]
+    }
+  ]
+}

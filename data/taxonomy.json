@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "description": "Canonical crime-type taxonomy for FIR Intel. Every FIR must be classified into exactly one of these types.",
+  "crime_types": [
+    {
+      "id": "cyber_fraud_kyc",
+      "label": "Cyber Fraud – KYC / Bank Executive Impersonation",
+      "description": "Caller poses as a bank executive and claims KYC, reward points or account details need to be updated. Victim is asked to install remote-access software (AnyDesk, TeamViewer) or share an OTP / APK link, after which money is transferred out of the victim's account.",
+      "keywords": ["KYC", "bank executive", "reward points", "AnyDesk", "OTP", "APK", "screen share", "expire"]
+    },
+    {
+      "id": "fake_police_call",
+      "label": "Fake Police / Authority Call (Digital Arrest)",
+      "description": "Caller poses as a police officer, CBI, ED, customs or other government authority and claims the victim's Aadhaar / parcel / account is linked to a crime. Victim is kept on a video call ('digital arrest') and coerced into transferring money.",
+      "keywords": ["customs officer", "CBI officer", "police", "Aadhaar", "money laundering", "parcel", "digital arrest", "video call", "verification"]
+    },
+    {
+      "id": "job_scam",
+      "label": "Job / Task-Based Scam",
+      "description": "Victim is offered a part-time or work-from-home job (data entry, task completion, etc.) via WhatsApp or Telegram. A security deposit or registration fee is collected via UPI and then the number goes dark.",
+      "keywords": ["part time", "task based", "work from home", "data entry", "Telegram group", "security deposit", "registration fee", "WhatsApp"]
+    },
+    {
+      "id": "atm_card_swap",
+      "label": "ATM Card Swap",
+      "description": "Accused approaches victim at an ATM booth, offers help, observes the PIN and swaps the card with a dummy card. Money is later withdrawn using the genuine card.",
+      "keywords": ["ATM booth", "PIN", "card swap", "swapped the ATM card", "guide", "withdraw cash"]
+    },
+    {
+      "id": "chain_snatching",
+      "label": "Chain Snatching",
+      "description": "Two or more accused on a motorcycle or scooter approach the victim and snatch a gold chain or other jewellery and flee.",
+      "keywords": ["snatched", "gold chain", "scooty", "motorcycle", "sped away", "snatch", "jewellery", "temple"]
+    },
+    {
+      "id": "house_burglary",
+      "label": "House Burglary",
+      "description": "Accused break into a locked, unoccupied house (family away at wedding, out of town, etc.) and steal cash, jewellery, electronics or other valuables.",
+      "keywords": ["house", "locked", "broke the lock", "iron rod", "cut the window grill", "out of town", "wedding", "burglary", "stole"]
+    },
+    {
+      "id": "vehicle_theft",
+      "label": "Vehicle Theft",
+      "description": "Victim's motorcycle, scooter or other vehicle is stolen while parked – typically taken away on a loader, or the handle lock is broken.",
+      "keywords": ["parked", "loader", "vehicle", "motorcycle", "scooter", "registration number", "handle lock", "stolen"]
+    },
+    {
+      "id": "other",
+      "label": "Other / Unclassified",
+      "description": "FIR does not fit any of the defined crime types above.",
+      "keywords": []
+    }
+  ]
+}

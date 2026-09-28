@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fir-intel": {
+      "command": "C:\\Users\\bhard\\OneDrive\\Desktop\\IBM_HACKATHON\\fir-intel\\.venv\\Scripts\\python.exe",
+      "args": ["mcp_server/server.py"],
+      "env": {
+        "FIR_INTEL_DB": "${workspaceFolder}/fir-intel/fir_intel.db"
+      }
+    }
+  }
+}

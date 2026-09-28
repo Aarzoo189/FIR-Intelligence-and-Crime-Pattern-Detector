@@ -1,0 +1,51 @@
+{
+  "version": "1.1",
+  "description": "Every distinct IPC/BNS/IT-Act section found in data/firs.json, stored in UPPERCASE (uppercase the FIR's section before lookup, e.g. 'BNS 305(a)' -> 'BNS 305(A)'), mapped to the likely crime types from the taxonomy. A single FIR may carry multiple sections; sections alone do not determine crime type — narrative context is required.",
+  "sections": [
+    {
+      "section": "BNS 3(5)",
+      "description": "Common intention — criminal act done by several persons in furtherance of the common intention of all",
+      "likely_crime_types": ["chain_snatching", "vehicle_theft", "house_burglary", "atm_card_swap"]
+    },
+    {
+      "section": "BNS 303(2)",
+      "description": "Theft — punishment for theft",
+      "likely_crime_types": ["vehicle_theft", "atm_card_swap"]
+    },
+    {
+      "section": "BNS 304(2)",
+      "description": "Snatching — punishment for snatching (theft by sudden or forcible seizure)",
+      "likely_crime_types": ["chain_snatching"]
+    },
+    {
+      "section": "BNS 305(A)",
+      "description": "Theft in a dwelling house — theft in any building, tent or vessel used as a human dwelling or for custody of property",
+      "likely_crime_types": ["house_burglary"]
+    },
+    {
+      "section": "BNS 308(2)",
+      "description": "Extortion — punishment for extortion (putting a person in fear to dishonestly induce delivery of property)",
+      "likely_crime_types": ["fake_police_call"]
+    },
+    {
+      "section": "BNS 318(4)",
+      "description": "Cheating — cheating and thereby dishonestly inducing delivery of property",
+      "likely_crime_types": ["cyber_fraud_kyc", "fake_police_call", "job_scam", "atm_card_swap"]
+    },
+    {
+      "section": "BNS 319(2)",
+      "description": "Cheating by personation — punishment for cheating by pretending to be another person",
+      "likely_crime_types": ["cyber_fraud_kyc", "fake_police_call", "job_scam"]
+    },
+    {
+      "section": "BNS 331(4)",
+      "description": "House-breaking by night — lurking house-trespass or house-breaking by night in order to commit an offence punishable with imprisonment",
+      "likely_crime_types": ["house_burglary"]
+    },
+    {
+      "section": "IT ACT 66D",
+      "description": "Cheating by personation using a computer resource or communication device",
+      "likely_crime_types": ["cyber_fraud_kyc", "fake_police_call", "job_scam"]
+    }
+  ]
+}

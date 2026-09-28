@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "description": "Phone numbers that must never be stored as accused contact numbers or used for linking. These are public emergency / helpline numbers that frequently appear in victim narratives. Match only against extracted phone identifiers, never raw narrative text (e.g. 'Rs 112,000' is not the 112 helpline).",
+  "stoplist": [
+    {
+      "number": "112",
+      "label": "National Emergency Helpline"
+    },
+    {
+      "number": "1930",
+      "label": "National Cyber Crime Helpline"
+    },
+    {
+      "number": "100",
+      "label": "Police Emergency"
+    },
+    {
+      "number": "181",
+      "label": "Women Helpline"
+    },
+    {
+      "number": "1947",
+      "label": "UIDAI Aadhaar Helpline"
+    },
+    {
+      "number": "1098",
+      "label": "CHILDLINE"
+    }
+  ]
+}

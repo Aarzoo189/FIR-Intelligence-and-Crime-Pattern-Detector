@@ -1,0 +1,371 @@
+[
+  {
+    "group_id": "G01",
+    "crime": "cyber_fraud_kyc",
+    "districts": [
+      "Ghaziabad",
+      "Kanpur Nagar"
+    ],
+    "members": [
+      {
+        "name": "Naveen Verma",
+        "father": "Rahul Verma",
+        "alias": null
+      },
+      {
+        "name": "Dinesh Verma",
+        "father": "Arif Verma",
+        "alias": "Chotu"
+      }
+    ],
+    "phones": [
+      "8000079402",
+      "9123465423"
+    ],
+    "upis": [
+      "pay58@ybl",
+      "rewards.87@okaxis"
+    ],
+    "slots": {
+      "pretext": "her KYC would expire the same day",
+      "method": "install AnyDesk and share the screen",
+      "extra": "bank executive"
+    },
+    "vehicle_last4": "9785",
+    "window": [
+      "2024-11-07",
+      "2025-02-12"
+    ]
+  },
+  {
+    "group_id": "G02",
+    "crime": "atm_card_swap",
+    "districts": [
+      "Varanasi",
+      "Agra",
+      "Ghaziabad"
+    ],
+    "members": [
+      {
+        "name": "Ashok Saxena",
+        "father": "Ravi Saxena",
+        "alias": null
+      },
+      {
+        "name": "Sunil Kumar",
+        "father": "Amit Kumar",
+        "alias": null
+      }
+    ],
+    "phones": [],
+    "upis": [],
+    "slots": {
+      "pretext": "stood behind the complainant and offered to guide him",
+      "method": "swapped the ATM card with a similar card after noting the PIN",
+      "extra": "white Swift Dzire car"
+    },
+    "vehicle_last4": "6820",
+    "window": [
+      "2024-07-26",
+      "2024-11-06"
+    ]
+  },
+  {
+    "group_id": "G03",
+    "crime": "chain_snatching",
+    "districts": [
+      "Varanasi",
+      "Lucknow",
+      "Agra"
+    ],
+    "members": [
+      {
+        "name": "Shahid Khan",
+        "father": "Rahul Khan",
+        "alias": "Bhura"
+      },
+      {
+        "name": "Amit Singh",
+        "father": "Vinod Singh",
+        "alias": "Guddu"
+      }
+    ],
+    "phones": [],
+    "upis": [],
+    "slots": {
+      "pretext": "returning from the temple",
+      "method": "asked for an address and then snatched the gold chain",
+      "extra": "black Pulsar motorcycle"
+    },
+    "vehicle_last4": "9179",
+    "window": [
+      "2024-09-19",
+      "2025-01-12"
+    ]
+  },
+  {
+    "group_id": "G04",
+    "crime": "house_burglary",
+    "districts": [
+      "Lucknow",
+      "Ghaziabad",
+      "Agra"
+    ],
+    "members": [
+      {
+        "name": "Suresh Srivastava",
+        "father": "Vikas Srivastava",
+        "alias": "Raju"
+      },
+      {
+        "name": "Arif Srivastava",
+        "father": "Imran Srivastava",
+        "alias": null
+      }
+    ],
+    "phones": [],
+    "upis": [],
+    "slots": {
+      "pretext": "while the family was out of town",
+      "method": "broke the lock with an iron rod and entered",
+      "extra": "cash, jewellery and a television"
+    },
+    "vehicle_last4": "7916",
+    "window": [
+      "2024-08-05",
+      "2024-12-11"
+    ]
+  },
+  {
+    "group_id": "G05",
+    "crime": "vehicle_theft",
+    "districts": [
+      "Ghaziabad",
+      "Kanpur Nagar",
+      "Varanasi"
+    ],
+    "members": [
+      {
+        "name": "Sachin Kumar",
+        "father": "Gaurav Kumar",
+        "alias": null
+      },
+      {
+        "name": "Rajesh Khan",
+        "father": "Sanjay Khan",
+        "alias": null
+      },
+      {
+        "name": "Pankaj Kumar",
+        "father": "Sanjay Kumar",
+        "alias": "Guddu"
+      }
+    ],
+    "phones": [],
+    "upis": [],
+    "slots": {
+      "pretext": "parked outside the market",
+      "method": "took it away on a small loader",
+      "extra": "Bajaj Pulsar"
+    },
+    "vehicle_last4": "9317",
+    "window": [
+      "2025-01-01",
+      "2025-05-09"
+    ]
+  },
+  {
+    "group_id": "G06",
+    "crime": "job_scam",
+    "districts": [
+      "Lucknow",
+      "Kanpur Nagar"
+    ],
+    "members": [
+      {
+        "name": "Ravi Mishra",
+        "father": "Shahid Mishra",
+        "alias": null
+      },
+      {
+        "name": "Rajesh Mishra",
+        "father": "Vinod Mishra",
+        "alias": "Sonu"
+      }
+    ],
+    "phones": [
+      "9000071822"
+    ],
+    "upis": [
+      "refund43@ibl",
+      "jobs79@paytm"
+    ],
+    "slots": {
+      "pretext": "a part time task based job",
+      "method": "added the complainant to a Telegram group and asked for a security deposit",
+      "extra": "WhatsApp"
+    },
+    "vehicle_last4": "7118",
+    "window": [
+      "2024-09-17",
+      "2025-01-13"
+    ]
+  },
+  {
+    "group_id": "G07",
+    "crime": "fake_police_call",
+    "districts": [
+      "Lucknow",
+      "Ghaziabad"
+    ],
+    "members": [
+      {
+        "name": "Rahul Srivastava",
+        "father": "Amit Srivastava",
+        "alias": "Bhura"
+      },
+      {
+        "name": "Amit Srivastava",
+        "father": "Amit Srivastava",
+        "alias": null
+      }
+    ],
+    "phones": [
+      "9000083473",
+      "9876529973"
+    ],
+    "upis": [
+      "jobs22@ybl",
+      "jobs.64@oksbi"
+    ],
+    "slots": {
+      "pretext": "the complainant's Aadhaar was linked to a money laundering case",
+      "method": "kept the complainant on a video call and demanded money for verification",
+      "extra": "customs officer"
+    },
+    "vehicle_last4": "2612",
+    "window": [
+      "2024-07-16",
+      "2024-10-17"
+    ]
+  },
+  {
+    "group_id": "G08",
+    "crime": "cyber_fraud_kyc",
+    "districts": [
+      "Kanpur Nagar",
+      "Ghaziabad"
+    ],
+    "members": [
+      {
+        "name": "Anil Saxena",
+        "father": "Rahul Saxena",
+        "alias": "Bablu"
+      },
+      {
+        "name": "Arif Saxena",
+        "father": "Pramod Saxena",
+        "alias": "Pintu"
+      },
+      {
+        "name": "Rohit Saxena",
+        "father": "Anil Saxena",
+        "alias": null
+      }
+    ],
+    "phones": [
+      "6000073602",
+      "6000006474"
+    ],
+    "upis": [
+      "refund_72@paytm",
+      "shop.37@ybl"
+    ],
+    "slots": {
+      "pretext": "reward points on the account were about to expire",
+      "method": "install AnyDesk and share the screen",
+      "extra": "bank executive"
+    },
+    "vehicle_last4": "6138",
+    "window": [
+      "2024-07-04",
+      "2024-10-05"
+    ]
+  },
+  {
+    "group_id": "G09",
+    "crime": "atm_card_swap",
+    "districts": [
+      "Varanasi",
+      "Kanpur Nagar",
+      "Ghaziabad"
+    ],
+    "members": [
+      {
+        "name": "Shahid Kumar",
+        "father": "Manoj Kumar",
+        "alias": null
+      },
+      {
+        "name": "Ramesh Pandey",
+        "father": "Ramesh Pandey",
+        "alias": "Golu"
+      },
+      {
+        "name": "Rahul Rathore",
+        "father": "Sunil Rathore",
+        "alias": "Golu"
+      }
+    ],
+    "phones": [],
+    "upis": [],
+    "slots": {
+      "pretext": "stood behind the complainant and offered to guide him",
+      "method": "swapped the ATM card with a similar card after noting the PIN",
+      "extra": "white Swift Dzire car"
+    },
+    "vehicle_last4": "7484",
+    "window": [
+      "2024-11-11",
+      "2025-02-17"
+    ]
+  },
+  {
+    "group_id": "G10",
+    "crime": "chain_snatching",
+    "districts": [
+      "Ghaziabad",
+      "Lucknow",
+      "Varanasi"
+    ],
+    "members": [
+      {
+        "name": "Vinod Ansari",
+        "father": "Ramesh Ansari",
+        "alias": "Golu"
+      },
+      {
+        "name": "Anil Ansari",
+        "father": "Ramesh Ansari",
+        "alias": "Bablu"
+      },
+      {
+        "name": "Ajay Tiwari",
+        "father": "Ramesh Tiwari",
+        "alias": "Lala"
+      }
+    ],
+    "phones": [],
+    "upis": [],
+    "slots": {
+      "pretext": "returning from the temple",
+      "method": "asked for an address and then snatched the gold chain",
+      "extra": "grey scooty"
+    },
+    "vehicle_last4": "2697",
+    "window": [
+      "2024-11-17",
+      "2025-04-16"
+    ]
+  }
+]

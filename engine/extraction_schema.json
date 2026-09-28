@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "extraction_schema",
+  "title": "FIR Intel extraction payload",
+  "description": "Schema for a structured extraction from one FIR narrative. All slots and people must carry a verbatim quote from the narrative (Rule 4). Phones must be 10-digit Indian mobiles not in the stoplist. Rule 2: no person may have a name matching the unknown-accused list.",
+  "type": "object",
+  "required": ["crime_type", "crime_type_conf", "mo_slots", "identifiers", "people"],
+  "additionalProperties": false,
+  "properties": {
+    "crime_type": {
+      "type": "string",
+      "description": "Taxonomy id from data/taxonomy.json, e.g. 'cyber_fraud_kyc'."
+    },
+    "crime_type_conf": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Confidence score for the crime_type classification (0–1)."
+    },
+    "mo_slots": {
+      "type": "object",
+      "description": "Slot_name → {value, quote} pairs. Slot names must be allowed for this crime_type in data/mo_schema.json.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "quote"],
+        "additionalProperties": false,
+        "properties": {
+          "value": { "description": "Extracted slot value (string, integer or boolean)." },
+          "quote": {
+            "type": "string",
+            "description": "Verbatim substring from the FIR narrative that supports this value (Rule 4)."
+          }
+        }
+      }
+    },
+    "identifiers": {
+      "type": "object",
+      "required": ["phones", "upis", "vehicle_regs", "vehicle_last4", "vehicle_desc"],
+      "additionalProperties": false,
+      "properties": {
+        "phones": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[6-9][0-9]{9}$" },
+          "description": "10-digit Indian mobile numbers. Must not include stoplist numbers."
+        },
+        "upis": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[\\w.]+@[a-z]+$" },
+          "description": "UPI IDs in lowercase."
+        },
+        "vehicle_regs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z0-9]+$" },
+          "description": "Full vehicle registration plates in uppercase with no spaces."
+        },
+        "vehicle_last4": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[0-9]{4}$" },
+          "description": "Last 4 digits of a partial registration plate."
+        },
+        "vehicle_desc": {
+          "type": ["string", "null"],
+          "description": "Colour + make description, e.g. 'white swift dzire', or null."
+        }
+      }
+    },
+    "people": {
+      "type": "array",
+      "description": "Named persons extracted from the narrative (accused, victim mentions, witnesses).",
+      "items": {
+        "type": "object",
+        "required": ["name", "role", "quote"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Full name. Must not be an unknown-person placeholder (Rule 2)."
+          },
+          "alias": { "type": ["string", "null"] },
+          "father_name": { "type": ["string", "null"] },
+          "role": {
+            "type": "string",
+            "enum": ["accused", "victim", "witness"],
+            "description": "Role of this person in the FIR."
+          },
+          "quote": {
+            "type": "string",
+            "description": "Verbatim substring from the FIR narrative that names or describes this person (Rule 4)."
+          }
+        }
+      }
+    }
+  }
+}

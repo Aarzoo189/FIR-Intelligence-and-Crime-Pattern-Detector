@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "description": "MO (Modus Operandi) slot schema for FIR Intel. Each crime type defines the structured slots that an extraction prompt must attempt to fill from the narrative. All populated slot values must include a verbatim 'quote' from the narrative (Rule 4).",
+  "slots_by_crime_type": {
+    "cyber_fraud_kyc": [
+      {"slot": "contact_channel",   "type": "string",  "description": "How the fraudster contacted the victim (e.g. 'phone call', 'WhatsApp message')"},
+      {"slot": "pretext",           "type": "string",  "description": "Stated reason for contact (e.g. 'KYC expiry', 'reward points expiry')"},
+      {"slot": "method",            "type": "string",  "description": "Technique used to gain access (e.g. 'AnyDesk install', 'OTP share', 'APK install', 'screen share')"},
+      {"slot": "impersonated_role", "type": "string",  "description": "Role claimed by the fraudster (e.g. 'bank executive')"},
+      {"slot": "amount_lost_inr",   "type": "integer", "description": "Amount transferred or debited in INR"},
+      {"slot": "upi_id",            "type": "string",  "description": "Destination UPI ID if mentioned"},
+      {"slot": "accused_phone",     "type": "string",  "description": "Phone number used by the accused"}
+    ],
+    "fake_police_call": [
+      {"slot": "contact_channel",   "type": "string",  "description": "How the fraudster contacted the victim"},
+      {"slot": "authority_claimed", "type": "string",  "description": "Authority impersonated (e.g. 'customs officer', 'CBI officer', 'police')"},
+      {"slot": "pretext",           "type": "string",  "description": "Stated reason (e.g. 'Aadhaar linked to money laundering', 'parcel with illegal items')"},
+      {"slot": "coercion_method",   "type": "string",  "description": "How victim was coerced (e.g. 'video call', 'threat of arrest')"},
+      {"slot": "amount_lost_inr",   "type": "integer", "description": "Amount transferred in INR"},
+      {"slot": "destination",       "type": "string",  "description": "UPI ID or bank account where money was sent"},
+      {"slot": "accused_phone",     "type": "string",  "description": "Phone number used by the accused"}
+    ],
+    "job_scam": [
+      {"slot": "contact_channel",   "type": "string",  "description": "Platform used (e.g. 'WhatsApp', 'Telegram')"},
+      {"slot": "job_type",          "type": "string",  "description": "Type of job offered (e.g. 'part time task based job', 'data entry work from home')"},
+      {"slot": "pretext",           "type": "string",  "description": "What was asked from victim (e.g. 'security deposit', 'registration fee')"},
+      {"slot": "amount_lost_inr",   "type": "integer", "description": "Amount paid in INR"},
+      {"slot": "upi_id",            "type": "string",  "description": "Destination UPI ID if mentioned"},
+      {"slot": "accused_phone",     "type": "string",  "description": "Phone number or WhatsApp number of the accused"}
+    ],
+    "atm_card_swap": [
+      {"slot": "location",          "type": "string",  "description": "ATM location or locality"},
+      {"slot": "method",            "type": "string",  "description": "How the swap was executed (e.g. 'offered to guide', 'offered help', 'exchanged card')"},
+      {"slot": "pin_observed",      "type": "boolean", "description": "Whether PIN was observed by the accused"},
+      {"slot": "amount_lost_inr",   "type": "integer", "description": "Amount withdrawn using the swapped card"},
+      {"slot": "getaway_vehicle",   "type": "string",  "description": "Vehicle and registration used for escape if mentioned"}
+    ],
+    "chain_snatching": [
+      {"slot": "location",          "type": "string",  "description": "Location of the incident"},
+      {"slot": "victim_activity",   "type": "string",  "description": "What the victim was doing (e.g. 'returning from the temple', 'shopping at the evening market')"},
+      {"slot": "vehicle",           "type": "string",  "description": "Vehicle used by accused (make, colour, partial registration if mentioned)"},
+      {"slot": "accused_count",     "type": "integer", "description": "Number of accused"},
+      {"slot": "approach_method",   "type": "string",  "description": "How accused approached (e.g. 'asked for an address', 'came close from behind')"},
+      {"slot": "property_type",     "type": "string",  "description": "What was snatched (e.g. 'gold chain')"},
+      {"slot": "value_inr",         "type": "integer", "description": "Estimated value in INR"}
+    ],
+    "house_burglary": [
+      {"slot": "entry_method",      "type": "string",  "description": "How entry was made (e.g. 'broke the lock with an iron rod', 'cut the window grill')"},
+      {"slot": "circumstances",     "type": "string",  "description": "Why the house was unoccupied (e.g. 'family out of town', 'attending a wedding')"},
+      {"slot": "items_stolen",      "type": "string",  "description": "Items stolen (e.g. 'cash, jewellery and a television')"},
+      {"slot": "value_inr",         "type": "integer", "description": "Estimated value of stolen property in INR"}
+    ],
+    "vehicle_theft": [
+      {"slot": "vehicle_type",      "type": "string",  "description": "Type and make of vehicle (e.g. 'Hero Splendor', 'Bajaj Pulsar')"},
+      {"slot": "vehicle_reg",       "type": "string",  "description": "Registration number if mentioned"},
+      {"slot": "parking_location",  "type": "string",  "description": "Where the vehicle was parked"},
+      {"slot": "theft_method",      "type": "string",  "description": "How the vehicle was taken (e.g. 'taken away on a small loader', 'broke the handle lock')"},
+      {"slot": "value_inr",         "type": "integer", "description": "Estimated value in INR"}
+    ],
+    "other": [
+      {"slot": "summary",           "type": "string",  "description": "Free-text summary of the incident"}
+    ]
+  }
+}
